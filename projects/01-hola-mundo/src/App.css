@@ -1,0 +1,72 @@
+.tw-followCard,
+.tw-followCard-header {
+    display: flex;
+    align-items: center;
+    gap: .75rem;
+    background-color: #121121;
+    padding: .5rem 1rem;
+    padding-left: .75rem;
+    border-radius: .5rem;
+}
+
+.tw-followCard {
+    justify-content: space-between;
+}
+
+.tw-followCard-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.tw-followCard-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+
+.tw-followCard-button {
+    background-color: #fff;
+    border: none;
+    line-height: 1;
+    padding: .5rem 1rem;
+    border-radius: 1rem;
+    cursor: pointer;
+    transition: background-color .3s;
+}
+
+.tw-followCard-button.is-following {
+    border: 1px solid #bbb;
+    color: #fff;
+    background-color: transparent;
+    width: 130px;
+}
+
+.tw-followCard-button:hover {
+    color: #fff;
+    background-color: rgb(16, 131, 213);
+}
+
+.tw-followCard-button.is-following:hover {
+    border-color: hsla(9, 92%, 49%, .2);
+    background-color: hsla(9, 92%, 49%, .1);
+    color: hsl(9, 92%, 49%);
+}
+
+
+.tw-followCard-stopFollow {
+    display: none;
+    transition: .3s;
+}
+
+.tw-followCard-text {
+    transition: display .3s;
+}
+
+.tw-followCard-button.is-following:hover .tw-followCard-stopFollow {
+    display: block;
+}
+
+.tw-followCard-button.is-following:hover .tw-followCard-text {
+    display: none;
+}
